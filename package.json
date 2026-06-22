@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 5000",
-    "build": "next build",
-    "start": "PORT=5000 next start",
+    "dev": "node init && next dev -p 5000",
+    "build": "node init && next build",
+    "start": "node init && PORT=5000 next start",
     "lint": "next lint",
     "update-prices": "npx ts-node scripts/update-prices.ts",
     "update-prices:js": "node scripts/update-prices.js",
